@@ -1,5 +1,6 @@
 :root {
     --pink: #fbd4d9;
+    --light-pink:  #fdf6f7;
     --light-red: #ff3b3c;
     --light-green: #6dcd6b;
     --dark-red: #ed1b26;
@@ -22,13 +23,16 @@
     src: url(../font/open-sans/OpenSans-Regular.ttf);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
 }
 
 body {
+
     background: #fff9;
 }
 
@@ -36,14 +40,21 @@ body {
 /* HEADER */
 
 .header-content {
-    /*    background: var(--pink);
-*/
+    background: var(--light-pink);
+    position: sticky;
+    top: -1px;
+    width: 100%;
+    height: 95px;    
+    z-index: 1000;
+    margin-bottom: 2px;
 }
+    
 
 .small-paragraph {
     background: var(--black);
     text-align: center;
     color: #fff;
+    
 }
 
 .small-span a {
@@ -56,13 +67,17 @@ body {
 .content {
     display: flex;
     justify-content: space-between;
-    height: 113px;
+    height: 70px;
+
 }
 
 .img-logotipo {
-    width: 220px;
-    height: 140px;
-    margin: 0 0 0em 3em;
+    /* width: 230px; */
+    width: 15%;
+    height: 140%;
+    position: relative;
+    bottom: 15px;
+    margin: 0 0 0 3.5em;
     
 }
 
@@ -76,7 +91,7 @@ body {
 }
 
 .link-content {
-    margin-top: 3.5em;
+    margin-top: 2.5em;
     margin-left: 0em;
     margin-right: 4.06em;
 }
@@ -84,7 +99,7 @@ body {
 .link-content a {
     font-family: var(--font-tittle);
     text-decoration: none;
-    font-size: 0.99em;
+    font-size: 1em;
     padding: 1.25em;
     border-radius: 0.31em;
     margin-right: 0.62;
@@ -93,7 +108,7 @@ body {
 }
 
 .link-content a:hover,
-activo1 {
+.link-content a .activo{
     color: var(--dark-pink);
     transition-duration: 0.3s;
 }
@@ -110,17 +125,147 @@ header nav .hr-header {
 /* MAIN CONTENT OF WEBSITE */
 
 
+/* ARTICLES PRODUCTS EXCLUSIVE */
+
+
+.products-articles{
+    background: var(--light-pink);
+    padding: 20px 0 30px 0 ;
+    box-shadow: var(--pink) 0 5px 10px 0px;
+
+}
+
+.products-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products-main img{
+    /* width: 250px; */
+    width: 100%;
+    height: 250px;
+    }
+
+.products-exclusive-1, .products-exclusive-2, .products-exclusive-3{
+    text-align: center;  
+    width: 22%;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: var(--dark-pink) 0 0 14px;
+    background: rgba(241, 239, 239, 1);
+    margin: 70px 25px 70px 25px;
+}
+
+/* -------****   Text EXCLUSIVE  ****------- */
+
+    .text-content-exclusive{
+        text-align: center;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 120px 0 -10px 0;
+    }
+
+    .text-content-exclusive .text{
+        display: inline;
+        color: var(--dark-pink);
+    }
+
+    .hr-exclusive{
+        display: inline-block;
+        width: 110px;
+        border: var(--pink) solid 1px;
+        margin: 0 20px 8px 20px;        
+    }
+
+
+
+/* -------****   PRODUCT EXCLUSIVE 1  ****------- */
+
+.products-exclusive-1{
+    text-align: center;
+    width: 25%;
+    background: rgba(241, 239, 239, .3);
+    font-size: 14px;
+    position: relative;
+
+}
+
+    .products-exclusive-1  h3{
+        color: var(--dark-pink);
+        font-size: 1.25em;
+        padding-top: 0.50em;
+    }
+
+    .products-exclusive-1 p{
+        width: 78%;
+        margin: 0 auto ;
+        color: rgb(59, 59, 59);
+        padding: 0.625em;
+    }
+        .products-exclusive-1 p i{
+            font-size: 22px;
+            display: inline;
+            text-align: center;
+            margin: 0 10px 0 0;
+        }
+
+    .products-exclusive-1 .position-price{
+        display: flex;
+        width: 100%;
+        /* padding: 0 50% 0 0; */
+        font-size: 17.5px;
+        flex-direction: row-reverse;
+        justify-content: center;
+
+    }
+
+
+    .products-exclusive-1 .position-price p{
+        color: rgb(8, 87, 8);
+        padding: 0.625em;
+        font-size: 1.0625em;
+        font-weight: bold;
+        margin: 1.25em 0 1.5625em;
+        width: 40%;
+        position: relative;
+
+    }
+
+    /* -------****   END PRODUCT EXCLUSIVE 1  ****------- */
+
+
+    /* -------**** START  MORE PRODUCTS  ****------- */
+
+
+.more-products{
+   display: flex;
+   justify-content: center;
+   margin: 35px 0 0 0;
+}
+    .more-products a{
+        text-decoration: none;
+        font-size: 18px;
+        font-family: var(--font-family);
+        color: var(--dark-pink);
+        
+    }
+        .more-products a:hover{
+            color: #ffaeba;
+            transition: .2s;
+        }
+    .more-products a i{
+        font-size: 35px;
+        margin: 10px 0 0 10px;
+        color: var(--dark-pink);
+    }
+
+        
+
 /* ELEMENTS INFO */
 
-.first-portada {
-    background: url(../img/portada.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 37.5em;
-    margin-top: 1.25em;
-    display: flex;
-    margin: auto;
-}
+
 
 .elements-info {
     display: flex;
@@ -203,16 +348,15 @@ i {
 
 .slider-one {
     width: 99.9%;
-    margin: auto;
+    margin:0 auto;
     overflow: hidden;
 }
 
 .slider-one ul {
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 0;
-    display: flex;
-    width: 400%;
-    animation: cambio 20s infinite alternate ease-in;
+    width: 100%;
+    /* animation: cambio 10s infinite alternate ease-in; */
 }
 
 .slider-one li {
@@ -225,7 +369,7 @@ i {
     height: 550px;
 }
 
-@keyframes cambio {
+/* @keyframes cambio {
     0% {
         margin-left: 0;
     }
@@ -233,57 +377,29 @@ i {
         margin-left: 0;
     }
     25% {
-        margin-left: -100%;
+        margin-left: -200%;
     }
     45% {
-        margin-left: -100%;
+        margin-left: -20%;
     }
     50% {
-        margin-left: -200%;
+        margin-left: -300%;
     }
     70% {
-        margin-left: -200%;
+        margin-left: -300%;
     }
     75% {
         margin-left: -300%;
     }
     100% {
-        margin-left: -300%;
-    }
+        margin-left: -200%;
+    } */
 }
 
 
 /* ELEMENTS BRAND */
 
-.elements-brand {
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 65px;
-}
 
-.hr-brand-first,
-.hr-brand-second {
-    border: 0.5px solid;
-    color: var(--dark-pink);
-    background: pink;
-    width: 350px;
-    height: 1px;
-}
-
-.hr-brand-second {
-    bottom: 25px;
-}
-
-.element-tittle-brand {
-    color: var(--dark-pink);
-    position: relative;
-    bottom: 20px;
-    margin: 0px 20px 0px 20px;
-    font-size: 28px;
-    font-family: var(--font-tittle);
-}
 
 
 /* SLIDER TWO (PRODUCTS) */
@@ -424,3 +540,5 @@ i {
 .element-info-list ul li {
     padding: 17px 0 0 0;
 }
+
+
