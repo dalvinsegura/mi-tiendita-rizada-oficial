@@ -185,7 +185,8 @@ header nav .hr-header {
     .products-main{
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
+        flex-direction: row;
         flex-wrap: wrap;
     }
 
