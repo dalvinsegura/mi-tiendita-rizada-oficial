@@ -367,3 +367,128 @@ header nav .hr-header {
             color: var(--light-gray);
             margin: 0 13px 0 13px;
         }
+
+
+
+
+
+
+
+
+
+        /* -------****   FOOTER START  ****------- */
+
+footer{
+    width: 100%;
+    background: #242323;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.content-fr-1{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    text-align: center;
+    margin: 35px 0 35px 0;
+
+}
+
+footer img{
+    width: 15%;
+    margin: 0 auto 15px auto;
+}
+
+footer .content-fr-1 p{
+    width: 100%;
+    color: #727272;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.content-fr-2{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    text-align: center;
+    margin: 35px 0 35px 0;
+
+}
+
+.content-fr-2 h3{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    color: #000;
+    margin: 0 0 7px 0;
+}
+
+.content-fr-2 .link-content-fr{
+    display: flex;
+    flex-direction: column;
+}
+    .content-fr-2 .link-content-fr a{
+        width: 16.3%;
+        text-decoration: none;
+        font-size: 19px;
+        color: #b3b3b3;
+        margin: 6px auto 6px auto;
+    }
+    .content-fr-2 .link-content-fr a:hover{
+        color: var(--dark-pink);
+        font-size: 20px;
+        transition: .3s;
+        cursor: pointer;
+    }
+
+
+.content-fr-3{
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    text-align: center;
+    margin: 35px 0 35px 0;
+    line-height: 13px;
+}
+
+.content-fr-3 .contact-content{
+    margin: 0 0 20px 0;
+}
+
+.content-fr-3 .contact-content h3{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    color: #000;
+    margin: 0 0 14px 0;
+}
+
+.content-fr-3 .contact-content p{
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b3b3b3;
+    margin: 7px 0 7px 0;
+}
+
+.content-fr-3 .social-content h3{
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 3px;
+    color: #000;
+    margin: 0 0 7px 0;
+}
+
+.content-fr-3 .social-content a i{
+    font-size: 27px;
+    margin: 5px 10px 5px 10px;
+    text-align: center;
+    color: #b3b3b3;
+}
+    .content-fr-3 .social-content a i:hover{
+        color: var(--dark-pink);
+        transition: .8s;
+        transform: rotate(360deg);
+        cursor: pointer;
+    }
