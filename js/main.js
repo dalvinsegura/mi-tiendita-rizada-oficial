@@ -1,9 +1,41 @@
+$(document).ready(main);
+
+
+var contador = 1;
+
+function main(){
+  $('.btn-menu').click(function(){
+    if(contador == 1){
+      $('.link-content').animate({
+        left: '0'
+      });
+    }else {
+      $('.link-content').animate({
+        left: '-100%'
+      });
+    }
+  })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 let productExclusive_1 = document.getElementById(`products-exclusive-1`),
     productExclusive_2 = document.getElementById(`products-exclusive-2`),
     productExclusive_3 = document.getElementById(`products-exclusive-3`),
     productExclusive_4 = document.getElementById(`products-exclusive-4`),
     productExclusive_5 = document.getElementById(`products-exclusive-5`),
     productExclusive_6 = document.getElementById(`products-exclusive-6`);
+    btnOrdenNowContent = document.getElementById(`btn-ordenNow-content`);
 
 
 
@@ -30,11 +62,19 @@ function redireccionar3(){
     window.location="https://www.afroliterd.com/producto/combo-kinky-curly/";
   }
 
+  function ordenNowBtnRedire(){
+    window.location="https://www.afroliterd.com/";
+  }
 
 
-productExclusive_1.addEventListener(`click`, redireccionar1);
-productExclusive_2.addEventListener(`click`, redireccionar2);
-productExclusive_3.addEventListener(`click`, redireccionar3)
-productExclusive_4.addEventListener(`click`, redireccionar4)
-productExclusive_5.addEventListener(`click`, redireccionar5)
-productExclusive_6.addEventListener(`click`, redireccionar6)
+  btnOrdenNowContent.addEventListener(`click`, ordenNowBtnRedire)
+
+
+// productExclusive_1.addEventListener(`click`, redireccionar1);
+// productExclusive_2.addEventListener(`click`, redireccionar2);
+// productExclusive_3.addEventListener(`click`, redireccionar3)
+// productExclusive_4.addEventListener(`click`, redireccionar4)
+// productExclusive_5.addEventListener(`click`, redireccionar5)
+// productExclusive_6.addEventListener(`click`, redireccionar6)
+
+
