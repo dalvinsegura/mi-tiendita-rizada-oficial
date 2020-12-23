@@ -86,7 +86,8 @@ function redireccionar3(){
   }
 
 
-  // btnOrdenNowContent.addEventListener(`click`, ordenNowBtnRedire)
+  // btnOrdenNowContent.click(ordenNowBtnRedire())
+
 
 
 // productExclusive_1.addEventListener(`click`, redireccionar1);

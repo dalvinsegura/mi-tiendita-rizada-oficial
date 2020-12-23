@@ -724,6 +724,9 @@ footer .content-fr-1 p{
             width: 100%;
             height: 100%;
             padding: 0;
+            position: fixed;
+
+
         }
 
         header .btn-bar-style{
@@ -734,28 +737,38 @@ footer .content-fr-1 p{
            /* display: none; */
            display: flex;
            flex-direction: column;
+           z-index: 2;
+
             
         }
 
         header .logo-menu{
-            padding: 50px 0 25px 0;
+            padding: 10px 0 20px 0;
             margin: 0;
+            z-index: 2;
+            position: fixed;
         }
 
         header nav{
-            background: #fff2f4;
-            height: 100%;
+            width: 80%;
+            /* background: #fff2f4; */
+            background: #242323;
+            width: 90%;
+            height: 100vh;
             margin: -1px 0 0 0;
             padding: 15% 0 0 0;
             display: flex;
             flex-direction: column;
-
+            position: fixed;
             position: relative;
-            /* left: -100%; */
+            /* left: 0%; */
+
+            border-radius: 0 0 10px 0;
         }
 
         header nav a{
             margin: 30px 0;
+            padding-bottom: 10px;
             border-bottom: 1px solid rgba(114, 114, 114,.1);
             text-align: center;
 
@@ -767,12 +780,17 @@ footer .content-fr-1 p{
             display: block;
             /* float: left; */
             position: relative;
+            background-attachment: fixed;
+            
+
             
         }
             header .menu-bar i{
                 position: absolute;
                 left: 0;
-                margin: 60px 0 0 30px;
+                margin: 30px 0 0 30px;
+                z-index: 999;
+
             }
 
 
