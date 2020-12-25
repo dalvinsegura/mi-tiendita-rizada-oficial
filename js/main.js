@@ -6,35 +6,33 @@
 
 
 
-var contador = 1;
 
 
 
-  $('#btn-bar').click(function (){
-    if(contador == 1){
-      $('nav').toggle(600, function (){})
-    }else{
-      $('nav').toggle({
-        left: '-100%'
-      });
-    }
-  })
+  // $('#btn-bar').click(function(){
+  //   $('nav').toggle().slideRight(6000, function(){});
+  // });
 
-  if(contador == 1){
-    console.log("funciona")
-  }else{
-    console.log("no funciona")
-  }
+  var contador = 1;
 
+ 
 
-  // boton = $('.btn-bar');
-  // menu = $('nav');
-
-  // boton.toggle(100, function (){
-  //   menu.css({
-  //     left: 0
-  //   })
-  // })
+  $('.menu-bar').click(function(){
+		// $('nav').toggle(); 
+ 
+		if(contador == 1){
+			$('nav').animate({
+				left: '0'
+			});
+			contador = 0;
+		} else {
+			contador = 1;
+			$('nav').animate({
+				left: '-100%'
+			});
+		}
+ 
+	});
 
 
 
@@ -88,14 +86,6 @@ function redireccionar3(){
 
   // btnOrdenNowContent.click(ordenNowBtnRedire())
 
-
-
-// productExclusive_1.addEventListener(`click`, redireccionar1);
-// productExclusive_2.addEventListener(`click`, redireccionar2);
-// productExclusive_3.addEventListener(`click`, redireccionar3)
-// productExclusive_4.addEventListener(`click`, redireccionar4)
-// productExclusive_5.addEventListener(`click`, redireccionar5)
-// productExclusive_6.addEventListener(`click`, redireccionar6)
 
 
 
